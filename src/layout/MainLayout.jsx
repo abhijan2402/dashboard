@@ -3,6 +3,7 @@ import './main-layout.scss'
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../components/sidebar/Sidebar'
 import TopNav from '../components/topnav/TopNav'
+import Blank from '../pages/Blank'
 
 const MainLayout = () => {
     return (
@@ -11,7 +12,8 @@ const MainLayout = () => {
             <div className="main">
                 <div className="main__content">
                     <TopNav />
-                    <Outlet />
+                    <Blank/>
+                    {/* <Outlet /> */}
                 </div>
             </div>
         </>
